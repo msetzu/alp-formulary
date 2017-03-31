@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[top=3cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[T1]{fontenc}           % For symbols like tilde
+\usepackage{hyperref}              % For \url{...}
+\usepackage{amsthm}                % \proof environment
+\usepackage{amssymb}               % Math symbols
+\usepackage{amsmath}               % Various commands like \text{...}
+\usepackage{mathtools}             % Maths
+\usepackage[noend]{algpseudocode}  % Pseudocode printer
+\usepackage{listings}              % Source code printer
+\usepackage{framed}                % To frame the computational cost
+\usepackage{qtree}                 % Draw simple binary trees
+\usepackage{titlesec}              % Customize sections
+\usepackage{biblatex}              % Bibliography
+\usepackage{FiraSans}              % Font for the title
+\usepackage{tikz}                  % Drawing
+\usepackage{tikz-qtree}            % Drawing trees
+\usetikzlibrary{matrix}
+\usepackage{newclude}
+
+\titleformat{\section}
+{\normalfont\scshape}{\thesection}{1em}{}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}      % Define absolute value notation
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}     % Define norm notation
+\DeclarePairedDelimiter\marray{\langle}{\rangle} % Define array notation
+
+\DeclareMathOperator*{\median}{median}    % Define median with subscript support
+\DeclareMathOperator*{\mprob}{\mathbb{P}} % Define probability with subscript support
+
+\newcommand*{\E}[1]{\mathbb{E}\left[{#1}\right]}      % Define expected value
+\newcommand*{\prob}[1]{\mprob\left[{#1}\right]}       % Define probability
+\newcommand*{\probs}[2]{\mprob_{#1}\left[{#2}\right]} % Define probability with subscript
+%\newcommand{\sectionbreak}{\clearpage}                % Clear page before each section
+
+\lstset{numbers=left} % Print line numbers in \begin{lstlisting}...
+\algrenewcommand{\algorithmiccomment}[1]{\hfill // #1} % Comment style in pseudocode
+
+\title{\rule{12cm}{2pt} \vspace{5mm} \\ \Huge\firaoldstyle{Distributed algorithms:\\ a formulary} \rule{12cm}{4pt}}
+\author{\Large\firalight{Mattia Setzu}}
+\date{\firathin{2017}}
+
+\begin{document}
+
+  	\maketitle
+  
+  	\include*{communication}
+	\include*{serialization}
+  	\include*{spanning_trees}
+  	\newpage
+	\include*{minimum_finding}
+  	\include*{saturation}
+\end{document}

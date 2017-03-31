@@ -1,0 +1,10 @@
+\section{Broadcast}
+\begin{table}[h]
+\begin{tabular}{llll}
+			\textbf{Model}		& \textbf{Description}						& \textbf{Messages}						& \textbf{Time} \\
+	\hline 	Graph 				& Broadcast on a general graph				& $\sum_{n}{deg(v) - 1} = 2m - n + 1$	& $n - 1$ \\
+	\hline 	Hypercube 			& Descending broadcast on an hypercube		& $n - 1$								& $n - 1$ \\
+	\hline 	Tree 				& Broadcast on a tree						& $n + 1$								& $n - 1$ \\
+	\hline 	Tree 				& Broadcast on a tree ($k^*$ initiators)	& $n + k^* - 2$							& $n - 1$ \\
+\end{tabular}
+\end{table}

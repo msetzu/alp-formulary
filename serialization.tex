@@ -1,0 +1,11 @@
+\section{Serialization}
+\begin{table}[h]
+\begin{tabular}{llll}
+			\textbf{Model}		& \textbf{Description}						& \textbf{Messages}						& \textbf{Time} \\
+	\hline 	Graph 				& Sequential token on generic graph			& $\geq m$								& $\geq n - 1$ \\
+	\hline 	Graph $[DF++]$ 		& Asynchronous system with \emph{received}
+	and \emph{ack} messages													& $4m -n + 1$							& $2n - 2$ \\
+	\hline 	Graph $[DF^*]$		& Asynchronous system with \emph{received} messages
+																			& $4m -2n + 1$								& $2n - 12$ \\
+\end{tabular}
+\end{table}
