@@ -22,6 +22,8 @@
 
 \titleformat{\section}
 {\normalfont\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\scshape}{\thesubsection}{1em}{}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}      % Define absolute value notation
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}     % Define norm notation
@@ -49,14 +51,20 @@
   	\section{Asynchronous systems}
   	\include*{communication}
 	\include*{serialization}
-  	\include*{spanning_trees}
-  	\newpage
+  	\include*{spanning_trees}\newpage
 	\include*{minimum_finding}
   	\include*{saturation}
-  	\newpage
+	\newpage
+	
   	\section{Synchronous systems}
   	\include*{asfar}
-  	%\include*{bit_communication}
-  	%\include*{pipeline}
-  	%\include*{waiting}
+  	\include*{bit_communication}
+  	\include*{waiting}
+  	\newpage
+  	
+  	\section{Sorting}
+  	\include*{sorting}
+  	
+  	\section{Routing}
+  	\include*{routing}
 \end{document}

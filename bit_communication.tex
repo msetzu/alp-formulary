@@ -1,0 +1,11 @@
+\subsection{Bit communicators}
+\begin{table}[h]
+\begin{tabular}{llll}
+			\textbf{Model}		& \textbf{Description}						& \textbf{Bits}		& \textbf{Time} \\
+	\hline 	1-bit communicator 	& Wait $\frac{\mathcal{M}}{2}$, use bit for remainder
+																			& $1$				& $\frac{\mathcal{M}}{2}$ \\
+	\hline 	2-bits communicator & Wait $\left \lceil{\sqrt{\mathcal{M}}}\right \rceil$, send remainder $\mathcal{M} -
+										\left \lceil{\sqrt{\mathcal{M}}}\right \rceil$			& $2$												
+																								& $\mathcal{M} - \left \lceil{\sqrt{\mathcal{M}}}\right \rceil$ \\
+\end{tabular}
+\end{table}

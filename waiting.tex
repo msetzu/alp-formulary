@@ -1,0 +1,13 @@
+\subsection{Waiting}
+\begin{table}[h]
+\begin{tabular}{llll}
+			\textbf{Model}		& \textbf{Description}					& \textbf{Bits}			& \textbf{Time} \\
+	\hline 	Round-Noise 		& Synchronous minimum in ring			& $1$					& $2min$ \\
+	\hline 	1 error guess 		& Guess minimum with one noise error	& -						& $min + 1$ \\
+	\hline 	2 errors guess 		& Guess minimum with two noise errors	& -						& $\leq 2\sqrt{\mathcal{M}}$ \\
+	\hline 	$(q,k)$ model 		& Guess minimum with $q$ questions and $k - 1$ overestimates	
+																		& -						& $\sum_{j=1}^{k}{{q}\choose{k}}$ \\
+	\hline 	Pipeline maximum 	& Compute maximum in pipeline with wait		& $2n$				 & $(n - 1) + max$ \\
+\end{tabular}
+\end{table}
+
